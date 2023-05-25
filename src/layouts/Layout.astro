@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import "@fontsource/open-sans";
 
 export interface Props {
   title: string;
@@ -28,9 +29,5 @@ const { title } = Astro.props;
 <style is:global>
   html {
     font-family: "Open Sans";
-  }
-  code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
 </style>
