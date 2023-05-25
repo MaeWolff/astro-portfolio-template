@@ -1,3 +1,35 @@
-<header>
-  <p>test</p>
+---
+import removeTrailingSlash from "@/utils/removeTrailingSlash";
+
+const pathname = removeTrailingSlash(Astro.url.pathname);
+---
+
+<header class="flex w-full flex-col gap-2 md:flex-row md:justify-between">
+  <a href="mailto:maxencewolff.pro@gmail.com" class="hover:text-neutral-100"
+    >maxencewolff.pro@gmail.com</a
+  >
+
+  <nav role="navigation">
+    <ul role="list" class="flex flex-row gap-2">
+      <li>
+        <a
+          href="/"
+          class:list={{
+            ["hover:text-neutral-100"]: true,
+            ["text-neutral-100"]: pathname === "/",
+          }}>Home</a
+        >
+      </li>
+      <li>/</li>
+      <li>
+        <a
+          href="/posts"
+          class:list={{
+            ["hover:text-neutral-100"]: true,
+            ["text-neutral-100"]: pathname === "/posts",
+          }}>Posts</a
+        >
+      </li>
+    </ul>
+  </nav>
 </header>
