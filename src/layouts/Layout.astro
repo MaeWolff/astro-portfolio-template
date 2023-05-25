@@ -16,14 +16,13 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-neutral-950 text-neutral-100 min-h-screen">
     <slot />
   </body>
 </html>
 <style is:global>
   html {
-    font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
+    font-family: "Open Sans";
   }
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
