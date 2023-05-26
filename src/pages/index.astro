@@ -4,9 +4,12 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
 import PostCard from "@/components/PostCard.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
+
 import presentation from "@/data/presentation";
+import projects from "@/data/projects";
 
 const posts = await getCollection("posts");
 ---
@@ -31,26 +34,36 @@ const posts = await getCollection("posts");
 
       <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
         {
-          posts
-            .slice(0, 2)
-            .map((post) => (
-              <PostCard
-                key={post.data.title}
-                publishedAt={post.data.publishedAt}
-                title={post.data.title}
-                description={post.data.description}
-                slug={post.slug}
-              />
-            ))
+          posts.length !== 0 &&
+            posts
+              .slice(0, 2)
+              .map((post) => (
+                <PostCard
+                  key={post.data.title}
+                  publishedAt={post.data.publishedAt}
+                  title={post.data.title}
+                  description={post.data.description}
+                  slug={post.slug}
+                />
+              ))
         }
       </section>
     </article>
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Selected projects (0)</h3>
+        <h3 class="text-lg text-neutral-100">
+          Selected projects ({projects.length})
+        </h3>
       </header>
-      <p>Oops, I must work^^^^^</p>
+      {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
+
+      <section class="flex flex-col gap-4">
+        {
+          projects.length !== 0 &&
+            projects.map((project) => <ProjectCard {...project} />)
+        }
+      </section>
     </article>
 
     <article class="flex flex-col gap-8">
