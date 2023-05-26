@@ -13,12 +13,12 @@ const formatTechs = (values: string[]) =>
   {
     isComingSoon && (
       <div class="t group flex w-full flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 md:flex-row md:items-center">
-        <div class="flex flex-row items-center gap-4">
+        <div class="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
           <p class="text-neutral-100">{title}</p>
           <p>{formatTechs(techs)}</p>
         </div>
 
-        <p class="rounded-md bg-neutral-900 px-4 py-1">Soon</p>
+        <p class="w-fit rounded-md bg-neutral-900 px-4 py-1">Soon</p>
       </div>
     )
   }
@@ -31,7 +31,7 @@ const formatTechs = (values: string[]) =>
         target="_blank"
         rel="noreferrer"
       >
-        <div class="flex flex-row items-center gap-4">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center">
           <p class="text-neutral-100">{title}</p>
           <p>{formatTechs(techs)}</p>
         </div>
