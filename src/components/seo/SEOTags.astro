@@ -17,13 +17,14 @@ type Props = {
 const { title, description, noindex, og } = Astro.props;
 
 const DEFAULT_TITLE_PAGE = "Astro - Portfolio template";
-const DEFAULT_DESCRIPTION_PAGE = "/";
+const DEFAULT_DESCRIPTION_PAGE =
+  "A minimal portfolio template built with Astro and Tailwindcss.";
 const DEFAULT_URL_SITE = "https://demo.maxencewolff.com/";
 
 const openGraph = {
   title: og?.title || DEFAULT_TITLE_PAGE,
   type: og?.type || "website",
-  image: og?.image || "/opengraph-image.png",
+  image: og?.image || "opengraph-image.png",
   alt: og?.alt || "astro portfolio template image",
   url: DEFAULT_URL_SITE,
   description: og?.description || DEFAULT_DESCRIPTION_PAGE,
