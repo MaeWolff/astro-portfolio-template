@@ -1,5 +1,6 @@
 ---
 import { SEO } from "astro-seo";
+import { SITE_URL } from "@/data/config";
 
 type Props = {
   title?: string;
@@ -19,7 +20,7 @@ const { title, description, noindex, og } = Astro.props;
 const DEFAULT_TITLE_PAGE = "Astro - Portfolio template";
 const DEFAULT_DESCRIPTION_PAGE =
   "A minimal portfolio template built with Astro and Tailwindcss.";
-const DEFAULT_URL_SITE = "https://demo.maxencewolff.com/";
+const DEFAULT_URL_SITE = SITE_URL;
 
 const openGraph = {
   title: og?.title || DEFAULT_TITLE_PAGE,
