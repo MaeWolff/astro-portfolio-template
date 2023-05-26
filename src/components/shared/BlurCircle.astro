@@ -1,19 +1,18 @@
 ---
+import type { TailwindColor } from "@/utils/types/tailwind";
+import { MAP_COLOR_VARIANT_TO_BG } from "@/utils/mapVariants";
+
 type Props = {
   position: "bottom" | "top";
-  color: "orange" | "violet";
+  color: TailwindColor;
 };
 
 const { position, color } = Astro.props;
-const backgroundVariants: Record<Props["colors"], string> = {
-  orange: "bg-orange-500",
-  violet: "bg-violet-500",
-};
 ---
 
 <div
   class:list={{
-    [`fixed z-0 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full ${backgroundVariants[color]} blur-[150px] md:blur-[350px] opacity-50`]: true,
+    [`fixed z-0 h-[134px] w-[134px] lg:w-[300px] lg:h-[300px] rounded-full ${MAP_COLOR_VARIANT_TO_BG[color]} blur-[150px] md:blur-[350px] opacity-50`]: true,
     ["left-0 top-0"]: position === "top",
     ["right-0 bottom-0"]: position === "bottom",
   }}
