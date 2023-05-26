@@ -12,7 +12,7 @@ const { title, publishedAt, description, slug } = Astro.props;
 ---
 
 <a
-  class="flex max-w-sm cursor-pointer flex-col gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400"
+  class="group flex max-w-sm cursor-pointer flex-col gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400"
   href={`/posts/${slug}`}
 >
   <div
@@ -22,7 +22,13 @@ const { title, publishedAt, description, slug } = Astro.props;
     <div class="flex flex-row items-center gap-4">
       <p>{formatDate(publishedAt)}</p>
 
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        fill="none"
+        class="transition-all duration-300 group-hover:translate-x-1"
+      >
         <path
           d="M5.25 12.75L12.75 5.25"
           stroke="#999999"
