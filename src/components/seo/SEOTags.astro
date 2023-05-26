@@ -1,0 +1,68 @@
+---
+import { SEO } from "astro-seo";
+
+type Props = {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+  og?: {
+    title: string;
+    type: string;
+    description: string;
+    image: string;
+    alt: string;
+  };
+};
+
+const { title, description, noindex, og } = Astro.props;
+
+const DEFAULT_TITLE_PAGE = "Astro - Portfolio template";
+const DEFAULT_DESCRIPTION_PAGE = "/";
+const DEFAULT_URL_SITE = "https://demo.maxencewolff.com/";
+
+const openGraph = {
+  title: og?.title || DEFAULT_TITLE_PAGE,
+  type: og?.type || "website",
+  image: og?.image || "/opengraph-image.png",
+  alt: og?.alt || "astro portfolio template image",
+  url: DEFAULT_URL_SITE,
+  description: og?.description || DEFAULT_DESCRIPTION_PAGE,
+};
+---
+
+<head>
+  <SEO
+    charset="UTF-8"
+    title={title || DEFAULT_TITLE_PAGE}
+    description={description || DEFAULT_DESCRIPTION_PAGE}
+    noindex={noindex || false}
+    openGraph={{
+      basic: {
+        title: openGraph.title,
+        type: openGraph.type,
+        image: openGraph.image,
+      },
+      image: {
+        alt: openGraph.alt,
+      },
+    }}
+    twitter={{
+      creator: "@itsstormzz_",
+    }}
+    extend={{
+      link: [{ rel: "icon", href: "/favicon.svg" }],
+      meta: [
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "generator", content: Astro.generator },
+        {
+          name: "twitter:image",
+          content: openGraph.image,
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: openGraph.title },
+        { name: "twitter:description", content: openGraph.description },
+        { name: "twitter:site", content: "@itsstormzz_" },
+      ],
+    }}
+  />
+</head>
