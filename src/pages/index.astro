@@ -2,17 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
 import Link from "@/components/shared/Link.astro";
+import presentation from "@/data/presentation";
+import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 ---
 
 <Layout title="Portfolio">
   <main class="flex flex-col gap-20">
     <article class="flex flex-col gap-8">
-      <h1 class="text-3xl text-neutral-100">Hi, I’m Maxence 👋</h1>
-      <h2 class="max-w-[60ch] leading-6">
-        Lorem ipsum dolor sit amet consectetur. Et ultrices blandit neque eget
-        mauris at lectus vitae duis. Elit amet pretium et donec. At facilisi
-        duis aliquet vestibulum viverra dolor quam et.
-      </h2>
+      <h1 class="text-3xl text-neutral-100">{presentation.title}</h1>
+      <h2
+        class="max-w-[60ch] leading-6"
+        set:html={convertAsteriskToStrongTag(presentation.description)}
+      />
       <SocialLinks />
     </article>
 
