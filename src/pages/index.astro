@@ -72,8 +72,8 @@ const posts = await getCollection("posts");
       </header>
       <p>
         Email me at <Link
-          href="mailto:maxencewolff.pro@gmail.com"
-          label="maxencewolff.pro@gmail.com"
+          href={`mailto:${presentation.mail}`}
+          label={presentation.mail}
         /> or follow me via my social links.
       </p>
 
