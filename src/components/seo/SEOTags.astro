@@ -51,7 +51,10 @@ const openGraph = {
       creator: "@itsstormzz_",
     }}
     extend={{
-      link: [{ rel: "icon", href: "/favicon.svg" }],
+      link: [
+        { rel: "icon", href: "/favicon.svg" },
+        { rel: "sitemap", href: "/sitemap-index.xml" },
+      ],
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "generator", content: Astro.generator },
