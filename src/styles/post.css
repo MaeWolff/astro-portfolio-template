@@ -1,0 +1,39 @@
+.post p {
+  @apply leading-7;
+}
+
+.post code {
+  @apply rounded-sm bg-neutral-800 px-1 py-[2px] text-orange-500;
+}
+
+.post h2 {
+  @apply mt-6 text-3xl text-neutral-100;
+}
+
+.post h3 {
+  @apply mt-4 text-xl text-neutral-100;
+}
+
+.post code {
+  @apply rounded-sm bg-neutral-800 px-1 py-[2px] text-red-500;
+}
+
+.post a {
+  @apply text-neutral-100 underline;
+}
+
+.post ul {
+  @apply list-disc;
+}
+
+.post blockquote {
+  @apply flex flex-row gap-2 before:block before:h-auto before:w-1 before:max-w-[1px] before:bg-red-400 before:content-[''];
+}
+
+.post pre {
+  @apply p-4;
+}
+
+.post pre > code {
+  @apply bg-transparent;
+}
