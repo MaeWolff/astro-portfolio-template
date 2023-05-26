@@ -1,26 +1,18 @@
 ---
 import Link from "./shared/Link.astro";
+import presentation from "@/data/presentation";
 ---
 
 <ul role="list" class="flex flex-row gap-2">
-  <li>
-    <Link href="/" label="Twitter" />
-  </li>
-  <li>/</li>
+  {
+    presentation.socials.map((social, index) => (
+      <>
+        <li key={social.label}>
+          <Link href={social.link} label={social.label} />
+        </li>
 
-  <li>
-    <Link href="/" label="LinkedIn" />
-  </li>
-
-  <li>/</li>
-
-  <li>
-    <Link href="/" label="Read.cv" />
-  </li>
-
-  <li>/</li>
-
-  <li>
-    <Link href="/" label="Github" />
-  </li>
+        {presentation.socials.length - 1 !== index && <li>/</li>}
+      </>
+    ))
+  }
 </ul>
