@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "SterbenVD",
+      "name": "Vishal Vijay Devadiga",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90999906?v=4",
+      "profile": "https://github.com/SterbenVD",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "astro-portfolio-template",
+  "projectOwner": "MaeWolff"
+}
