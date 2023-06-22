@@ -39,7 +39,6 @@ const posts = await getCollection("posts");
               .slice(0, 2)
               .map((post) => (
                 <PostCard
-                  key={post.data.title}
                   publishedAt={post.data.publishedAt}
                   title={post.data.title}
                   description={post.data.description}
