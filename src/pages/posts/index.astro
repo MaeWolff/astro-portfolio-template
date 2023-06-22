@@ -21,7 +21,7 @@ const posts = await getCollection("posts");
               <h2 class="text-lg">{post.data.title}</h2>
 
               <div class="flex flex-row items-center gap-4">
-                <p>{formatDate(post.publishedAt)}</p>
+                <p>{formatDate(post.data.publishedAt)}</p>
                 <svg
                   width="18"
                   height="18"
