@@ -36,7 +36,7 @@ const posts = await getCollection("posts");
         {
           posts.length !== 0 &&
             posts
-              .slice(0, 2)
+              .slice(0, 5)
               .map((post) => (
                 <PostCard
                   publishedAt={post.data.publishedAt}
@@ -49,34 +49,6 @@ const posts = await getCollection("posts");
       </section>
     </article>
 
-    <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">
-          Selected projects ({projects.length})
-        </h3>
-      </header>
-      {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
-
-      <section class="flex flex-col gap-4">
-        {
-          projects.length !== 0 &&
-            projects.map((project) => <ProjectCard {...project} />)
-        }
-      </section>
-    </article>
-
-    <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Get in touch</h3>
-      </header>
-      <p>
-        Email me at <Link
-          href={`mailto:${presentation.mail}`}
-          label={presentation.mail}
-        /> or follow me via my social links.
-      </p>
-
-      <SocialLinks />
     </article>
   </main>
 </Layout>
