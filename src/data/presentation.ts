@@ -4,7 +4,6 @@ type Social = {
 };
 
 type Presentation = {
-  mail: string;
   title: string;
   description: string;
   socials: Social[];
