@@ -17,7 +17,7 @@ const presentation: Presentation = {
     "一个记录读书笔记、认知偏差的博客，始于 2019。",
   socials: [
     {
-      label: "Twiiter",
+      label: "Twitter",
       link: "https://twitter.com/saberpunko",
     },
     {
