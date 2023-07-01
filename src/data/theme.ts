@@ -5,19 +5,19 @@ type Theme = {
     primary: TailwindColor;
     blur: {
       top: TailwindColor;
-      bottom: TailwindColor;
+      bottom: TailwindColor;  
     };
   };
 };
 
 const theme: Theme = {
   colors: {
-    primary: "blue",
+    primary: "blue-500", // 更改主色调      
     blur: {
-      top: "blue",
-      bottom: "violet",
-    },
-  },
+      top: "blue-400",   // 更改上部作废颜色
+      bottom: "blue-600" // 更改下部作废颜色  
+    }   
+  }  
 };
 
 export default theme;
