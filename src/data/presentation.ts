@@ -11,7 +11,7 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
-  mail: "saberpunk@foxmail.com",
+  mail: "",
   title: "简单讲讲",
   description:
     "一个记录读书笔记、认知偏差的博客，始于 2019。",
