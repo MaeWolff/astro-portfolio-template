@@ -21,6 +21,12 @@ const { title, publishedAt, description, slug } = Astro.props;
     <p class="text-neutral-100">{title}</p>
     <div class="flex flex-row items-center gap-4">
       <p>{formatDate(publishedAt)}</p>
+      
+      <script>
+      function formatDate(date) {
+        // ... 返回 YYYY-MM-DD 格式
+      }
+      </script>
 
       <svg
         width="18"
