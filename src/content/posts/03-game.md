@@ -1,9 +1,9 @@
 ---
-title: "游戏改变世界 ★★★★☆"
-publishedAt: 2010-01-24
-description: "123123
-slug: "game-changer-the-world”
-isPublish:
+title: "game"
+publishedAt: 2019-05-24
+description: "Lorem ipsum dolor sit amet consectetur et ultrices blandit neque ege"
+slug: "game"
+isPublish: true
 ---
 
 ## 讲了什么？
