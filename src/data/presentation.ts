@@ -14,7 +14,7 @@ const presentation: Presentation = {
   mail: "",
   title: "简单讲讲",
   description:
-    "一个始于 2019 ，记录读书笔记和认知偏差的博客，。",
+    "一个始于 2019 ，记录读书笔记和认知偏差的博客。",
   socials: [
     {
       label: "Twitter",
