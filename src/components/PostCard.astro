@@ -12,15 +12,25 @@ const { title, publishedAt, description, slug } = Astro.props;
 ---
 
 <a  
-  class="group flex max-w-sm cursor-pointer flex-col gap-2 rounded-none p-0 transition-all duration-300 hover:-translate-y-2"
-  href={`/posts/${slug}`}
->
-  <div
-    class="flex w-full flex-col justify-between gap-2 md:flex-row md:items-center"
-  >
-    <p class="text-neutral-100">{title}</p>
-    <div class="flex flex-row items-center gap-4">
-      <p>{formatDate(publishedAt)}</p>
+  class="group flex max-w-sm cursor-pointer flex-col gap-2 rounded-none p-0 transition-all duration-300 hover:-translate-y-2"    
+  href={`/posts/${slug}`}>   
+ 
+   <div
+     class="flex w-full flex-col justify-between gap-2 md:flex-row md:items-center"
+   >    
+     <p class="text-neutral-100">{title}</p>
+     <div class="flex flex-row items-center gap-4">
+       <p>{formatDate(publishedAt)}</p>  
+     </div>   
+   </div>
+
+   <p class="truncate">{description}</p>
+
+  <style>
+  .max-w-sm {
+    max-width: 790px;
+  }  
+  </style>
 
       <svg
         width="18"
