@@ -1,7 +1,7 @@
 ---
 title: "game"
 publishedAt: 2019-05-24
-description: "Lorem ipsum dolor sit amet consectetur et ultrices blandit neque ege"
+description: "Lorem ipsum dolor sit amet consectetur et ultrices blandit neque ege435345 234234324 234234234 234234324 234234234 234234234 234234234 234234234 23423"
 slug: "game"
 isPublish: true
 ---
