@@ -11,13 +11,13 @@ type Props = {
 const { title, publishedAt, description, slug } = Astro.props;
 ---
 
-<a  
-  class="group flex max-w-sm cursor-pointer flex-col gap-2 rounded-none p-0 transition-all duration-300 hover:-translate-y-2"   
-  href={`/posts/${slug}`}>  
-  <div class="flex flex-row justify-between gap-2">     
-    <p class="text-neutral-100">{title}</p>     
-    <div class="flex flex-row items-center gap-4">    
-       <p>{formatDate(publishedAt)}</p>
+<a 
+  class="group flex max-w-sm cursor-pointer flex-col gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400"    
+  href={`/posts/${slug}`}>
+  <div class="flex flex-row justify-between gap-2">  
+   <p class="text-neutral-100">{title}</p>    
+   <div class="flex flex-row items-center gap-4">
+      <p>{formatDate(publishedAt)}</p>
 
       <svg
         width="18"
