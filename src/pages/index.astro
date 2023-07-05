@@ -28,7 +28,7 @@ const posts = await getCollection("posts");
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">最新更新</h3>
-        <Link href="/posts" label="查看全部" target="_self" />
+        <Link href="/posts" label="查看全部" class="text-lg" target="_self" />
       </header>
       {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
 
