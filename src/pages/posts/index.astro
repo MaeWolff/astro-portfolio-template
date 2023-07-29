@@ -3,8 +3,8 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
-const posts = (await getCollection("posts")).sort(function(first, second) {
- return second.data.publishedAt - first.data.publishedAt;
+const posts = (await getCollection("posts")).sort(function (first, second) {
+  return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
 });
 ---
 
