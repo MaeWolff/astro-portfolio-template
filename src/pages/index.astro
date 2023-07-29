@@ -11,7 +11,9 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
 
-const posts = await getCollection("posts");
+const posts = (await getCollection("posts")).sort(function(first, second) {
+ return second.data.publishedAt - first.data.publishedAt;
+});
 ---
 
 <Layout>
