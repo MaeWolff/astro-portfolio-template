@@ -19,7 +19,7 @@ const presentation: Presentation = {
     "Bonjour, i'm a *french frontend developer* with over *3 years* of web experience. I am currently working with *NextJS and Typescript*. Outside of work I complete my pokemon card collection and learning TypeScript.",
   socials: [
     {
-      label: "Twiiter",
+      label: "X",
       link: "https://twitter.com/itsstormzz_",
     },
     {
