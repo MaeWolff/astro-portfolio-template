@@ -13,7 +13,7 @@ const DEFAULT_DESCRIPTION_PAGE =
 const DEFAULT_URL_SITE = SITE_URL;
 
 const openGraph = {
-  title: og?.title || DEFAULT_TITLE_PAGE,
+  title: title || og?.title || DEFAULT_TITLE_PAGE,
   type: og?.type || "website",
   image: og?.image || "/opengraph-image.jpg",
   alt: og?.alt || "astro portfolio template image",
