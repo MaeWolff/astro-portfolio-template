@@ -1,19 +1,9 @@
 ---
 import { SEO } from "astro-seo";
 import { SITE_URL } from "@/data/config";
+import type { HeadTags } from "@/utils/types/HeadTags";
 
-type Props = {
-  title?: string;
-  description?: string;
-  noindex?: boolean;
-  og?: {
-    title: string;
-    type: string;
-    description: string;
-    image: string;
-    alt: string;
-  };
-};
+type Props = HeadTags;
 
 const { title, description, noindex, og } = Astro.props;
 
