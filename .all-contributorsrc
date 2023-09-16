@@ -24,6 +24,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "javadshoja",
+      "name": "Javad Shoja",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57140027?v=4",
+      "profile": "http://jbrave.ir",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
