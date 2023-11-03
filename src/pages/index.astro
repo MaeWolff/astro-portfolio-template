@@ -17,7 +17,7 @@ const posts = await getCollection("posts");
 <Layout>
   <main class="flex flex-col gap-20">
     <article class="flex flex-col gap-8">
-      <h1 class="text-3xl text-neutral-100">{presentation.title}</h1>
+      <h1 class="text-3xl text-neutral-900">{presentation.title}</h1>
       <h2
         class="max-w-[60ch] leading-6"
         set:html={convertAsteriskToStrongTag(presentation.description)}
@@ -27,8 +27,8 @@ const posts = await getCollection("posts");
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">最新更新</h3>
-        <Link href="/posts" label="查看全部" class="text-lg text-neutral-100" target="_self" />
+        <h3 class="text-lg text-neutral-900">最新更新</h3>
+        <Link href="/posts" label="查看全部" class="text-lg text-red-600" target="_self" />
       </header>
       {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
 
