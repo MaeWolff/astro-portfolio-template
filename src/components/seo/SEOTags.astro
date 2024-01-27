@@ -1,5 +1,6 @@
 ---
 import { SEO } from "astro-seo";
+import { AstroFont } from "astro-font";
 import { SITE_URL } from "@/data/config";
 import type { HeadTags } from "@/utils/types/HeadTags";
 
@@ -59,5 +60,20 @@ const openGraph = {
         { name: "twitter:site", content: "@itsstormzz_" },
       ],
     }}
+  />
+  <AstroFont
+    config={[
+      {
+        src: [],
+        preload: false,
+        display: "swap",
+        selector: "html",
+        name: "Open Sans",
+        fallback: "sans-serif",
+        cssVariable: "font-open-sans",
+        googleFontsURL:
+          "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap",
+      },
+    ]}
   />
 </head>
