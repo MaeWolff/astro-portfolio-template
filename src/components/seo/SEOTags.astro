@@ -8,9 +8,9 @@ type Props = HeadTags;
 
 const { title, description, noindex, og } = Astro.props;
 
-const DEFAULT_TITLE_PAGE = "Astro - Portfolio template";
+const DEFAULT_TITLE_PAGE = "M. DeSocio - Portfolio";
 const DEFAULT_DESCRIPTION_PAGE =
-  "A minimal portfolio template built with Astro and Tailwindcss.";
+  "This is Mike DeSocio's portfolio website. Here you can find all of his work, blog posts, and contact information.";
 const DEFAULT_URL_SITE = SITE_URL;
 
 const openGraph = {
@@ -40,11 +40,11 @@ const openGraph = {
       },
     }}
     twitter={{
-      creator: "@itsstormzz_",
+      creator: "@mdesocio28",
     }}
     extend={{
       link: [
-        { rel: "icon", href: "/favicon.svg" },
+        { rel: "icon", href: "/favicon.ico" },
         { rel: "sitemap", href: "/sitemap-index.xml" },
       ],
       meta: [
@@ -57,7 +57,7 @@ const openGraph = {
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: openGraph.title },
         { name: "twitter:description", content: openGraph.description },
-        { name: "twitter:site", content: "@itsstormzz_" },
+        { name: "twitter:site", content: "@mdesocio28" },
       ],
     }}
   />
