@@ -12,23 +12,29 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
-  mail: "maxencewolff.pro@gmail.com",
-  title: "Hi, I’m Maxence 👋",
-  // profile: "/profile.webp",
+  mail: "mike@desocios.com",
+  title: "Hi, I’m Mike!",
+  profile: "/profile.jpg",
   description:
-    "Bonjour, i'm a *french frontend developer* with over *3 years* of web experience. I am currently working with *NextJS and Typescript*. Outside of work I complete my pokemon card collection and learning TypeScript.",
+    `
+      Hey, I'm Mike DeSocio, a cybersecurity enthusiast who loves diving into puzzles 
+      and paying attention to the little things. Whether I'm building secure systems or 
+      hitting the trails, I'm all about tackling challenges head-on and exploring new horizons. 
+      When I'm not knee-deep in code, you'll find me strumming my guitar, enjoying the great outdoors,
+      or getting lost in a captivating video game. Welcome to my world!
+    `,
   socials: [
     {
       label: "X",
-      link: "https://twitter.com/itsstormzz_",
+      link: "https://twitter.com/mdesocio28",
     },
     {
-      label: "Bento",
-      link: "https://bento.me/m-wolff",
+      label: "LinkedIn",
+      link: "https://www.linkedin.com/in/michael-desocio/",
     },
     {
-      label: "Github",
-      link: "https://github.com/MaeWolff",
+      label: "GitHub",
+      link: "https://github.com/mdesocio",
     },
   ],
 };
