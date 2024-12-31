@@ -42,6 +42,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "zackbraksa",
+      "name": "Zack Braksa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/379453?v=4",
+      "profile": "http://zackbraksa.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
