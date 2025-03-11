@@ -1,8 +1,8 @@
 ---
-import { SEO } from "astro-seo";
-import { AstroFont } from "astro-font";
 import { SITE_URL } from "@/data/config";
 import type { HeadTags } from "@/utils/types/HeadTags";
+import { AstroFont } from "astro-font";
+import { SEO } from "astro-seo";
 
 type Props = HeadTags;
 
@@ -45,7 +45,7 @@ const openGraph = {
     extend={{
       link: [
         { rel: "icon", href: "/favicon.svg" },
-        { rel: "sitemap", href: "/sitemap-index.xml" },
+        { rel: "sitemap", href: "/sitemap.xml" },
       ],
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
